@@ -1,0 +1,12 @@
+name: Project
+type: profile
+description: 'Your project profile.'
+version: VERSION
+core: 8.x
+dependencies:
+  - node
+  - block
+  - dblog
+themes:
+  - seven
+  - bootstrap
