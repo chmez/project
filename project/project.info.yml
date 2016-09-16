@@ -7,6 +7,11 @@ dependencies:
   - node
   - block
   - dblog
+  - help
+  - config
+  - breakpoint
+  - toolbar
+  - admin_toolbar
 themes:
   - seven
   - bootstrap

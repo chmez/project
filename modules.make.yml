@@ -10,6 +10,9 @@ includes:
   - "core.make.yml"
 
 projects:
+  admin_toolbar:
+    type: "module"
+    version: "1.17"
   bootstrap:
     type: "theme"
     version: "3.0-rc2"
