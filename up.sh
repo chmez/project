@@ -12,12 +12,7 @@ fi
 docker build -t chmez/ubuntu:latest .
 docker run --net=host -d -i -t --name chmez_github chmez/ubuntu:latest
 
-docker cp 000-default.conf chmez_github:/etc/apache2/sites-available
-docker exec -it chmez_github a2enmod rewrite
-docker exec -it chmez_github a2enmod headers
 docker exec -it chmez_github service apache2 start
-
-docker exec -it chmez_github usermod -d /usr/lib/mysql mysql
 docker exec -it chmez_github service mysql start
 
 docker cp project chmez_github:/var/www/html/profiles
