@@ -28,7 +28,7 @@ rm *.make.yml
 cd ..
 
 docker exec -it chmez_github chown -R www-data:www-data sites/default
-docker exec -it chmez_github drush si project --db-url=mysql://root:root@localhost:3306/drupal --account-name=root --account-pass=root --account-mail=admin@example.com --locale=uk --site-name="My Project" --site-mail=admin@example.com -y
+docker exec -it chmez_github drush si project --db-url=mysql://root:root@localhost:3306/drupal --account-name=root --account-pass=root --account-mail=admin@example.com --locale=en --site-name="My Project" --site-mail=admin@example.com -y
 
 docker exec -it chmez_github chown -R www-data:www-data sites/default/files
 docker exec -it chmez_github drush cr
